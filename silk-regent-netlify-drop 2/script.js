@@ -19,6 +19,49 @@ const translations = {
   }
 };
 
+const packageUpdate = {
+  "en": {
+    "collectionTitle": "Two couples journeys, four executive retreats",
+    "proof2": "Six-couple departures",
+    "couplesStartingPrice": "Couples journeys: indicative prices below",
+    "c1Tag": "London & country houses",
+    "c1Line": "Five nights at Taj 51 Buckingham Gate, with proposed Spencer House Special Access, a private Dorney Court visit and a Coworth Park treatment. Includes hosted meals, Heathrow transfers and scheduled chauffeured transport; arrangements subject to confirmation.",
+    "c5Tag": "Christmas in London · dates on request",
+    "c5Line": "Five nights at Taj 51 Buckingham Gate, with proposed Spencer House Special Access, Christmas at Kew or a seasonal event, premium theatre and a spa treatment. Includes two festive hosted meals per guest, Heathrow transfers and scheduled chauffeured transport; all subject to confirmation.",
+    "c1Price": "Indicative from £9,850 per couple",
+    "c5Price": "Indicative from £10,250 per couple",
+    "couplesTerms": "Both couples journeys are based on six couples (12 guests), sharing six rooms for five nights with breakfast. Private visits, hotels, events and treatments require written confirmation. Flights, visas, insurance, shopping and incidentals are excluded. Optional Aqua Shard dining is arranged separately and paid directly to the venue, including drinks, service and any deposit or minimum spend.",
+    "included5": "Spa treatment; facilities subject to confirmation"
+  },
+  "ru": {
+    "collectionTitle": "Две поездки для пар, четыре программы для руководителей",
+    "proof2": "Группы из шести пар",
+    "couplesStartingPrice": "Ориентировочные цены для пар — ниже",
+    "c1Tag": "Лондон и загородные усадьбы",
+    "c1Line": "Пять ночей в Taj 51 Buckingham Gate: специальный доступ в Spencer House, частная экскурсия в Dorney Court и процедура в Coworth Park — после подтверждения. Предусмотрены обеды или ужины с сопровождением, трансферы из/в Хитроу и транспорт по программе.",
+    "c5Tag": "Рождественский Лондон · даты по запросу",
+    "c5Line": "Пять ночей в Taj 51 Buckingham Gate: Spencer House, Christmas at Kew или другое сезонное событие, театр и спа-процедура. Две праздничные трапезы на гостя, трансферы из/в Хитроу и транспорт по программе. Все услуги требуют подтверждения.",
+    "c1Price": "Ориентировочно от £9 850 за пару",
+    "c5Price": "Ориентировочно от £10 250 за пару",
+    "couplesTerms": "Обе программы рассчитаны на шесть пар (12 гостей), шесть номеров и пять ночей с завтраком. Отели, частные визиты, события и процедуры подтверждаются письменно. Перелёты, визы, страховка, покупки и личные расходы не включены. Ужин в Aqua Shard оплачивается отдельно непосредственно заведению, включая напитки, обслуживание, депозит и минимальную сумму заказа.",
+    "included5": "Спа-процедура; доступ к удобствам уточняется"
+  },
+  "uz": {
+    "collectionTitle": "Juftliklar uchun ikki sayohat, rahbarlar uchun to‘rt dastur",
+    "proof2": "Olti juftlikdan iborat guruh",
+    "couplesStartingPrice": "Juftliklar uchun taxminiy narxlar quyida",
+    "c1Tag": "London va tarixiy qarorgohlar",
+    "c1Line": "Taj 51 Buckingham Gate mehmonxonasida besh kecha: Spencer House maxsus tashrifi, Dorney Court xususiy sayohati va Coworth Park muolajasi — tasdiqlangandan so‘ng. Hamrohlikdagi taomlar, Heathrow transferlari va dastur bo‘yicha transport ko‘zda tutilgan.",
+    "c5Tag": "Londonda Rojdestvo · sanalar so‘rov asosida",
+    "c5Line": "Taj 51 Buckingham Gate mehmonxonasida besh kecha: Spencer House, Christmas at Kew yoki mavsumiy tadbir, teatr va spa muolajasi. Har bir mehmon uchun ikki bayramona taom, Heathrow transferlari va dastur transporti. Barcha xizmatlar tasdiqlanishi kerak.",
+    "c1Price": "Taxminan bir juftlik uchun £9,850 dan",
+    "c5Price": "Taxminan bir juftlik uchun £10,250 dan",
+    "couplesTerms": "Har ikki dastur olti juftlik (12 mehmon), olti xona va nonushta bilan besh kechaga asoslangan. Mehmonxona, xususiy tashrif, tadbir va muolajalar yozma tasdiqlanadi. Parvoz, viza, sug‘urta, xaridlar va shaxsiy xarajatlar kiritilmagan. Aqua Shard kechki ovqati alohida tashkil etilib, ichimlik, xizmat haqi, depozit va minimal buyurtma bilan birga bevosita restoranga to‘lanadi.",
+    "included5": "Spa muolajasi; imkoniyatlar tasdiqlanadi"
+  }
+};
+for (const language of Object.keys(packageUpdate)) Object.assign(translations[language], packageUpdate[language]);
+
 let currentLanguage = "en";
 
 function applyLanguage(language) {
