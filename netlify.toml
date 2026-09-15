@@ -1,0 +1,3 @@
+[build]
+  base = "silk-regent-netlify-drop 2"
+  publish = "."
