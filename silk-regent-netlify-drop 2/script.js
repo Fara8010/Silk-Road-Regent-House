@@ -62,6 +62,43 @@ const packageUpdate = {
 };
 for (const language of Object.keys(packageUpdate)) Object.assign(translations[language], packageUpdate[language]);
 
+const executiveUpdate = {
+  "en": {
+    "collectionTitle": "Two couples journeys, two executive retreats",
+    "executiveStartingPrice": "Executive retreats for 8–10 guests · quotation on request",
+    "e3Tag": "Cambridge · heritage & entrepreneurship",
+    "e3Line": "A five-night London-based retreat with a Cambridge day visit, guided city exploration and a private discussion among your delegates. Proposed Peterhouse access and visits to Cambridge start-up hubs or accelerators can be explored through our local contact, subject to each host’s written approval. No university partnership, investor meeting or accelerator admission is implied.",
+    "e4Tag": "London · brands & craft",
+    "e4Line": "Five nights in London with curated retail visits, a British artisan session, a proposed Spencer House Special Access tour and a Silk Regent-led brand-observation discussion within your group. Hosted meals and a restorative treatment complete the programme; appointments and activities are subject to confirmation.",
+    "executiveTerms": "Executive groups: 8–10 guests, with the minimum departure based on eight single rooms for five nights with breakfast. Proposed hotels: Conrad London St James for Cambridge; The Londoner for Brands & Craft. Heathrow transfers, scheduled programme transport, hosting, two working lunches, one hosted dinner and a treatment are planned, subject to the final quotation. Cambridge access, transport and pricing must be requoted; the former Oxford price does not apply. Flights, visas, insurance, shopping and optional Aqua Shard dining are excluded. University, college and start-up hosts have not confirmed participation.",
+    "e3Price": "Tailored quotation · Cambridge itinerary to be confirmed",
+    "e4Price": "Indicative from £4,750 per executive"
+  },
+  "ru": {
+    "collectionTitle": "Две поездки для пар, две программы для руководителей",
+    "executiveStartingPrice": "Программы для 8–10 руководителей · цена по запросу",
+    "e3Tag": "Кембридж · наследие и предпринимательство",
+    "e3Line": "Пять ночей в Лондоне с поездкой в Кембридж, прогулкой с гидом и обсуждением внутри вашей делегации. Через местного представителя можно запросить посещение Peterhouse, стартап-центров или акселераторов — только с письменного согласия принимающей стороны. Партнёрство с университетом, встречи с инвесторами и приём в акселератор не обещаются.",
+    "e4Tag": "Лондон · бренды и ремёсла",
+    "e4Line": "Пять ночей в Лондоне: посещение магазинов, встреча с мастером, предполагаемая специальная экскурсия в Spencer House и обсуждение британских брендов внутри группы с Silk Regent. Предусмотрены совместные трапезы и оздоровительная процедура; все встречи требуют подтверждения.",
+    "executiveTerms": "Группа 8–10 гостей; минимальный расчёт — восемь одноместных номеров, пять ночей с завтраком. Предлагаются Conrad London St James для Кембриджа и The Londoner для программы брендов. Трансферы, транспорт по программе, сопровождение, два рабочих обеда, один ужин и процедура уточняются в смете. Кембридж требует нового расчёта: прежняя цена Оксфорда не действует. Перелёты, визы, страховка, покупки и Aqua Shard не включены. Участие университета, колледжа и стартап-площадок не подтверждено.",
+    "e3Price": "Индивидуальная смета · маршрут уточняется",
+    "e4Price": "Ориентировочно от £4 750 за гостя"
+  },
+  "uz": {
+    "collectionTitle": "Juftliklar uchun ikki sayohat, rahbarlar uchun ikki dastur",
+    "executiveStartingPrice": "8–10 rahbar uchun dasturlar · narx so‘rov asosida",
+    "e3Tag": "Cambridge · meros va tadbirkorlik",
+    "e3Line": "Londonda besh kecha, Cambridge shahriga tashrif, gid bilan sayr va delegatlar o‘rtasida muhokama. Mahalliy aloqamiz orqali Peterhouse, startap markazlari yoki akseleratorlarga tashrif so‘ralishi mumkin; mezbonning yozma roziligi talab etiladi. Universitet hamkorligi, investorlar bilan uchrashuv yoki akseleratorga qabul va’da qilinmaydi.",
+    "e4Tag": "London · brendlar va hunarmandchilik",
+    "e4Line": "Londonda besh kecha: tanlangan do‘konlar, hunarmand bilan mashg‘ulot, Spencer House maxsus tashrifi va Silk Regent boshchiligida guruh ichidagi brendlar muhokamasi. Birgalikdagi taomlar va sog‘lomlashtiruvchi muolaja rejalashtiriladi; barcha tadbirlar tasdiqlanadi.",
+    "executiveTerms": "8–10 mehmon; minimal hisob sakkizta bir kishilik xona va nonushta bilan besh kechaga asoslangan. Cambridge uchun Conrad London St James, brendlar dasturi uchun The Londoner taklif etiladi. Transfer, dastur transporti, hamrohlik, ikki ishchi tushlik, bir kechki ovqat va muolaja yakuniy taklifda belgilanadi. Cambridge uchun yangi narx hisoblanadi; Oxford narxi qo‘llanmaydi. Parvoz, viza, sug‘urta, xarid va Aqua Shard kiritilmagan. Universitet, kollej va startap mezbonlari ishtiroki tasdiqlanmagan.",
+    "e3Price": "Individual taklif · Cambridge dasturi tasdiqlanadi",
+    "e4Price": "Taxminan har bir rahbar uchun £4,750 dan"
+  }
+};
+for (const language of Object.keys(executiveUpdate)) Object.assign(translations[language], executiveUpdate[language]);
+
 let currentLanguage = "en";
 
 function applyLanguage(language) {
