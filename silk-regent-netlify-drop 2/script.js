@@ -120,7 +120,7 @@ function applyLanguage(language) {
   history.replaceState({}, "", url);
 }
 
-document.querySelectorAll("[data-lang]").forEach((button) => button.addEventListener("click", () => applyLanguage(button.dataset.lang)));
+
 
 document.querySelectorAll("[data-audience]").forEach((button) => {
   button.addEventListener("click", () => {
@@ -135,6 +135,9 @@ document.querySelectorAll("[data-audience]").forEach((button) => {
     });
     document.querySelectorAll("[data-price-audience]").forEach((price) => {
       price.hidden = price.dataset.priceAudience !== selected;
+    });
+    document.querySelectorAll("[data-audience-meta]").forEach((meta) => {
+      meta.hidden = meta.dataset.audienceMeta !== selected;
     });
   });
 });
@@ -160,5 +163,4 @@ document.getElementById("share-button").addEventListener("click", async (event) 
   }
 });
 
-const initialLanguage = new URLSearchParams(window.location.search).get("lang");
-applyLanguage(initialLanguage || "en");
+applyLanguage("en");
