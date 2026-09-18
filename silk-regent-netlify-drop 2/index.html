@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Silk Regent Ltd — Private British Journeys</title>
-  <meta name="description" content="Five-night private journeys across Britain for discerning couples and executive groups from Uzbekistan, hosted in English.">
+  <meta name="description" content="Private five-night British journeys across London and nearby Britain for couples and executive groups from Uzbekistan, hosted in English.">
   <meta name="theme-color" content="#0b241d">
   <meta property="og:title" content="Silk Regent Ltd — Private British Journeys">
   <meta property="og:description" content="Private five-night British journeys for couples and executive groups from Uzbekistan.">
@@ -12,6 +12,18 @@
   <meta property="og:url" content="https://silkregent.co.uk/">
   <link rel="canonical" href="https://silkregent.co.uk/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"TravelAgency",
+  "name":"Silk Regent Ltd",
+  "url":"https://silkregent.co.uk/",
+  "email":"info@silkregent.co.uk",
+  "description":"Private British journeys for couples and executive groups.",
+  "areaServed":"United Kingdom",
+  "serviceType":"Private hosted travel experiences"
+}
+</script>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -105,7 +117,7 @@
         <div class="standards">
           <article><strong>01</strong><div><h3 data-i18n="standard1Title">Calm from arrival</h3><p data-i18n="standard1Text">Heathrow meet-and-greet, considered transfers and a host who already knows the brief.</p></div></article>
           <article><strong>02</strong><div><h3 data-i18n="standard2Title">Access, responsibly promised</h3><p data-i18n="standard2Text">Private and invitation-only moments are confirmed in writing before they enter your itinerary.</p></div></article>
-          <article><strong>03</strong><div><h3 data-i18n="standard3Title">Your language, throughout</h3><p data-i18n="standard3Text">Programme direction in English, Russian or Uzbek — with dietary and cultural preferences built in.</p></div></article>
+          <article><strong>03</strong><div><h3 data-i18n="standard3Title">English throughout</h3><p data-i18n="standard3Text">One English-language point of contact throughout the programme, with dietary and cultural preferences built in.</p></div></article>
           <article><strong>04</strong><div><h3 data-i18n="standard4Title">A commercial partner</h3><p data-i18n="standard4Text">Clear itineraries, agency-ready materials and discreet support before, during and after travel.</p></div></article>
         </div>
       </div>
@@ -162,6 +174,14 @@
           <option>C5 · A Regent Christmas Privé</option><option>C1 · Crown &amp; Country Privé</option><option>E3 · Cambridge Heritage &amp; Innovation</option><option>E4 · British Brands, Craft &amp; Growth</option>
         </select></label>
         <div class="field-pair">
+          <label><span data-i18n="formContactMethod">Preferred contact method</span><select name="preferred_contact" required>
+            <option value="">Choose one</option><option>Email</option><option>Phone</option><option>WhatsApp</option>
+          </select></label>
+          <label><span data-i18n="formPurpose">Purpose of journey</span><select name="journey_purpose" required>
+            <option value="">Choose one</option><option>Private leisure</option><option>Executive retreat</option><option>Client hospitality</option><option>Other</option>
+          </select></label>
+        </div>
+        <div class="field-pair">
           <label><span data-i18n="formDates">Preferred travel dates</span><input name="preferred_dates" placeholder="e.g. 8–13 December 2026" required></label>
           <label><span data-i18n="formTravellers">Number of travellers</span><input name="travellers" type="number" min="1" max="100" required></label>
         </div>
@@ -173,9 +193,12 @@
     </section>
   </main>
 
+  <a class="mobile-book-bar" href="#booking">Request to book <span>↗</span></a>
+
   <footer>
     <a class="brand footer-brand" href="#top"><span class="brand-mark"><i>SR</i></span><span><b>Silk Regent Ltd</b><small data-i18n="footerTag">Private UK journeys for couples, families and executive circles.</small></span></a>
     <p><a href="mailto:info@silkregent.co.uk">info@silkregent.co.uk</a><br>silkregent.co.uk<br>London · United Kingdom<br>© 2026 Silk Regent Ltd</p>
   </footer>
+<noscript><div class="noscript-note">Please enable JavaScript to use the package selector. You can still contact us at info@silkregent.co.uk.</div></noscript>
 </body>
 </html>
