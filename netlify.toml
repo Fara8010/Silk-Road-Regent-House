@@ -1,3 +1,6 @@
 [build]
   base = "silk-regent-netlify-drop 2"
   publish = "."
+
+[context.deploy-preview]
+  ignore = "exit 1"
