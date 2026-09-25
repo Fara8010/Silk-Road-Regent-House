@@ -1,15 +1,14 @@
 "use strict";
 const journey = document.getElementById("journey-select");
 function updateForm(){
- const purpose=document.querySelector('[name="journey_purpose"]').value;
- const executive = /^E[34]/.test(journey.value) || (journey.value === "Bespoke brief" && ["Executive retreat","Board alignment"].includes(purpose));
+ const executive = /^E[34]/.test(journey.value);
  const fields=document.getElementById("executive-fields");
  fields.hidden=!executive;
  fields.querySelectorAll("input,textarea").forEach(el=>el.disabled=!executive);
  const travellers=document.querySelector('[name="travellers"]');
- travellers.min=executive?"8":"1";
+ travellers.min="1";
  travellers.max=executive?"10":"12";
- document.getElementById("group-hint").textContent=executive?"Executive retreats: 8–10 guests. Enter the size of your group.":journey.value==="Liquid Heritage · Sussex / Kent"?"Liquid Heritage is arranged on request and quoted separately. Enter the number of guests and your preferred Sussex or Kent location.":journey.value==="Bespoke brief"?"Our group formats remain six couples / 12 guests or 8–10 executive guests. Tell us your preferred format in your brief.":"Couples routings: six couples / 12 guests. Tell us how many places you are enquiring about.";
+ document.getElementById("group-hint").textContent=executive?"Executive packages: maximum 10 guests. Fixed itinerary with bilingual concierge escort throughout.":journey.value==="Liquid Heritage · Sussex / Kent"?"Liquid Heritage is a separately booked experience, not a modification to a fixed package. Maximum 12 guests.":"Couples packages: maximum 6 couples / 12 guests. Fixed itinerary with bilingual concierge escort throughout.";
 }
 document.querySelectorAll("[data-audience]").forEach(button=>button.addEventListener("click",()=>{
  const audience=button.dataset.audience;
