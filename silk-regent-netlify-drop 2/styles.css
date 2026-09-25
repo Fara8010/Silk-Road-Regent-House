@@ -28,3 +28,4 @@ footer{background:#081a16;color:#fff;display:flex;justify-content:space-between;
 }
 
 .story-copy{max-width:850px;font-size:18px;line-height:1.85}.included h2{font-size:clamp(32px,4vw,52px)}.group-badge{font-size:12px;font-weight:650;color:var(--forest);padding:12px;background:#f6f1e7}.book-button{min-height:48px}.starting-price{flex-wrap:wrap}#group-hint{font-size:13px;line-height:1.6}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #a87d38;outline-offset:4px}section{scroll-margin-top:24px}@media(max-width:640px){footer{padding-bottom:110px}.enquiry input,.enquiry select,.enquiry textarea{font-size:16px}.mobile-book-bar{bottom:max(14px,env(safe-area-inset-bottom))}}
+
