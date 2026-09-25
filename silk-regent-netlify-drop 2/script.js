@@ -9,7 +9,7 @@ function updateForm(){
  const travellers=document.querySelector('[name="travellers"]');
  travellers.min=executive?"8":"1";
  travellers.max=executive?"10":"12";
- document.getElementById("group-hint").textContent=executive?"Executive retreats: 8–10 guests. Enter the size of your group.":journey.value==="Bespoke brief"?"Our group formats remain six couples / 12 guests or 8–10 executive guests. Tell us your preferred format in your brief.":"Couples routings: six couples / 12 guests. Tell us how many places you are enquiring about.";
+ document.getElementById("group-hint").textContent=executive?"Executive retreats: 8–10 guests. Enter the size of your group.":journey.value==="Liquid Heritage · Sussex / Kent"?"Liquid Heritage is arranged on request and quoted separately. Enter the number of guests and your preferred Sussex or Kent location.":journey.value==="Bespoke brief"?"Our group formats remain six couples / 12 guests or 8–10 executive guests. Tell us your preferred format in your brief.":"Couples routings: six couples / 12 guests. Tell us how many places you are enquiring about.";
 }
 document.querySelectorAll("[data-audience]").forEach(button=>button.addEventListener("click",()=>{
  const audience=button.dataset.audience;
