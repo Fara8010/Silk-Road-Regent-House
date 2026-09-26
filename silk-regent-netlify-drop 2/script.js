@@ -2,13 +2,18 @@
 const journey = document.getElementById("journey-select");
 function updateForm(){
  const executive = /^E[34]/.test(journey.value);
+ const family = /^F[12]/.test(journey.value);
+ const familyFields = document.getElementById("family-fields");
+ familyFields.hidden = !family;
+ familyFields.querySelectorAll("input,select").forEach(el => el.disabled = !family);
  const fields=document.getElementById("executive-fields");
  fields.hidden=!executive;
  fields.querySelectorAll("input,textarea").forEach(el=>el.disabled=!executive);
  const travellers=document.querySelector('[name="travellers"]');
  travellers.min="1";
- travellers.max=executive?"10":"12";
- document.getElementById("group-hint").textContent=executive?"Executive packages: maximum 10 guests. Fixed itinerary with bilingual concierge escort throughout.":journey.value==="Liquid Heritage · Sussex / Kent"?"Liquid Heritage is a separately booked experience, not a modification to a fixed package. Maximum 12 guests.":"Couples packages: maximum 6 couples / 12 guests. Fixed itinerary with bilingual concierge escort throughout.";
+ if (family) travellers.removeAttribute("max");
+ else travellers.max=executive?"10":"12";
+ document.getElementById("group-hint").textContent=family?"Family experiences: price on enquiry. Your fixed programme, duration and accommodation are confirmed before booking. Bilingual concierge escort at all times.":executive?"Executive packages: maximum 10 guests. Fixed itinerary with bilingual concierge escort throughout.":journey.value==="Liquid Heritage · Sussex / Kent"?"Liquid Heritage is a separately booked experience, not a modification to a fixed package. Maximum 12 guests.":"Couples packages: maximum 6 couples / 12 guests. Fixed itinerary with bilingual concierge escort throughout.";
 }
 document.querySelectorAll("[data-audience]").forEach(button=>button.addEventListener("click",()=>{
  const audience=button.dataset.audience;
