@@ -36,3 +36,6 @@ document.getElementById("share-button").addEventListener("click",async event=>{
  const label=event.currentTarget.querySelector("span");try{await navigator.clipboard.writeText(location.href);label.textContent="Link copied";setTimeout(()=>label.textContent="Copy share link",1800);}catch{label.textContent="Copy this page address from your browser";}
 });
 updateForm();
+
+// Review build: no form submissions.
+document.querySelectorAll("form[data-review-only]").forEach(form => form.addEventListener("submit", event => {event.preventDefault(); alert("Review draft only. No enquiry has been sent.");}));
