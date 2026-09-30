@@ -12,3 +12,6 @@
 
 /* Christmas tasting collection review. */
 .draft-banner{position:relative;z-index:100;background:#e6d7b7;color:#173a2f;text-align:center;padding:10px 20px;font:10px Arial,sans-serif;letter-spacing:.12em;line-height:1.5}.package-price small{display:block;font:13px Arial,sans-serif;color:#65736b;margin-top:7px}.package-inclusions{font-size:13px;line-height:1.8;color:#53625d}.package-photo{background-color:#173b30}.package-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.package-body{padding:26px}.package-body h3{font-size:31px}.package-line{min-height:205px}@media(max-width:1050px){.package-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:640px){.package-grid{grid-template-columns:1fr}.package-line{min-height:0}.draft-banner{font-size:8px}}
+
+/* Keep package imagery local so external hotlinks cannot leave blank cards. */
+.package-photo.london,.package-photo.family-discoveries{background-image:url("assets/london-discoveries.jpg");background-position:center 72%}.package-photo.kings{background-image:url("assets/kings-bush-house.jpg");background-position:center}.package-photo.kings:before{content:"Bush House · Photo: Nick Wood / King’s College London";position:absolute;bottom:8px;left:12px;right:12px;z-index:2;font-size:9px;line-height:1.5;color:#fff}
