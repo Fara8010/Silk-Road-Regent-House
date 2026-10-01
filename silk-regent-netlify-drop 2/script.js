@@ -12,8 +12,8 @@ function updateForm(){
  const travellers=document.querySelector('[name="travellers"]');
  travellers.min="1";
  if (family) travellers.removeAttribute("max");
- else travellers.max=executive?"10":"12";
- document.getElementById("group-hint").textContent=family?"Family experiences: price on enquiry. Your fixed programme, duration and accommodation are confirmed before booking. Bilingual concierge escort at all times.":executive?"Executive packages: maximum 10 guests. Signature itinerary with bilingual concierge accompaniment throughout.":journey.value==="Liquid Heritage · Sussex / Kent"?"Liquid Heritage is a separately booked experience, not a modification to a fixed package. Maximum 12 guests.":"Couples packages: maximum 6 couples / 12 guests. Signature itinerary with bilingual concierge accompaniment throughout.";
+ else travellers.max=executive || /^C7/.test(journey.value)?"10":"12";
+ document.getElementById("group-hint").textContent=/^C7/.test(journey.value)?"London Tea & Celebration: maximum five couples / ten guests. Your tea masterclass and all reservations are confirmed before booking.":family?"Family experiences: price on enquiry. Your fixed programme, duration and accommodation are confirmed before booking. Bilingual concierge escort at all times.":executive?"Executive packages: maximum 10 guests. Signature itinerary with bilingual concierge accompaniment throughout.":journey.value==="Liquid Heritage · Sussex / Kent"?"Liquid Heritage is a separately booked experience, not a modification to a fixed package. Maximum 12 guests.":"Couples packages: maximum 6 couples / 12 guests. Signature itinerary with bilingual concierge accompaniment throughout.";
 }
 document.querySelectorAll("[data-audience]").forEach(button=>button.addEventListener("click",()=>{
  const audience=button.dataset.audience;
@@ -36,6 +36,3 @@ document.getElementById("share-button").addEventListener("click",async event=>{
  const label=event.currentTarget.querySelector("span");try{await navigator.clipboard.writeText(location.href);label.textContent="Link copied";setTimeout(()=>label.textContent="Copy share link",1800);}catch{label.textContent="Copy this page address from your browser";}
 });
 updateForm();
-
-// Review build: no form submissions.
-document.querySelectorAll("form[data-review-only]").forEach(form => form.addEventListener("submit", event => {event.preventDefault(); alert("Review draft only. No enquiry has been sent.");}));
