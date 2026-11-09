@@ -3,3 +3,6 @@
 
 [context.deploy-preview]
   ignore = "exit 1"
+
+[functions]
+  directory = "netlify/functions"
