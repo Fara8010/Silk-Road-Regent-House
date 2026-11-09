@@ -36,3 +36,5 @@ document.getElementById("share-button").addEventListener("click",async event=>{
  const label=event.currentTarget.querySelector("span");try{await navigator.clipboard.writeText(location.href);label.textContent="Link copied";setTimeout(()=>label.textContent="Copy share link",1800);}catch{label.textContent="Copy this page address from your browser";}
 });
 updateForm();
+
+if(document.body.dataset.preview === "true") document.querySelector("form.enquiry").addEventListener("submit", event => {event.preventDefault();let status=document.getElementById("enquiry-preview-status");if(!status){status=document.createElement("p");status.id="enquiry-preview-status";status.setAttribute("role","status");event.currentTarget.append(status);}status.textContent="Preview: your enquiry has not been submitted. No details have been stored.";});

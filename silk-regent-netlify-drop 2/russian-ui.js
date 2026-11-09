@@ -1,0 +1,5 @@
+if(document.documentElement.lang==='ru') {
+ document.getElementById('share-button').addEventListener('click',()=>{document.querySelector('#share-button span').textContent='Ссылка скопирована';});
+ const hint=()=>{const j=document.getElementById('journey-select').value;document.getElementById('group-hint').textContent=/^C[57]/.test(j)?'До пяти пар / десяти гостей. Мастер-класс и бронирования подтверждаются заранее.':/^F/.test(j)?'Семейная программа: цена по запросу, индивидуальное размещение и двуязычное сопровождение.':/^E/.test(j)?'До десяти руководителей, авторская программа и двуязычное сопровождение.':'До шести пар / двенадцати гостей. Программа и включённые услуги подтверждаются до бронирования.';};
+ document.getElementById('journey-select').addEventListener('change',hint);document.querySelectorAll('.book-button').forEach(b=>b.addEventListener('click',hint));hint();
+}

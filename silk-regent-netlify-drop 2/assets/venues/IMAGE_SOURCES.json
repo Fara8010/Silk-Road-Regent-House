@@ -1,0 +1,74 @@
+{
+  "spencer-interior": {
+    "imageUrl": "https://www.spencerhouse.co.uk/wp-content/uploads/2023/10/Spencer-House-Great-Room-Mike-Fear.jpg",
+    "source": "https://www.spencerhouse.co.uk/state-rooms/great-room",
+    "path": "/workspace/scratch/b940de9bf689/site/silk-regent-netlify-drop 2/assets/venues/spencer-interior.jpg",
+    "dimensions": [
+      2504,
+      1446
+    ]
+  },
+  "fortnum-day": {
+    "imageUrl": "https://wonderful.uk.com/wp-content/uploads/2023/08/DSC0646-scaled.jpg",
+    "source": "https://wonderful.uk.com/portfolio_page/a-fabulous-experience-at-fortnum-mason/",
+    "path": "/workspace/scratch/b940de9bf689/site/silk-regent-netlify-drop 2/assets/venues/fortnum-day.jpg",
+    "dimensions": [
+      2560,
+      1707
+    ]
+  },
+  "borough-new": {
+    "imageUrl": "https://boroughmarket.org.uk/wp-content/uploads/2025/02/Borough-Market-homepage.jpg",
+    "source": "https://boroughmarket.org.uk/",
+    "path": "/workspace/scratch/b940de9bf689/site/silk-regent-netlify-drop 2/assets/venues/borough-new.jpg",
+    "dimensions": [
+      6048,
+      3403
+    ]
+  },
+  "hampton": {
+    "imageUrl": "https://media.tatler.com/photos/6141e6819f9d1339639a7423/master/w_1600%2Cc_limit/base-court-facing-east.jpg",
+    "source": "https://www.tatler.com/article/queen-to-lose-18-million-from-tourism",
+    "path": "/workspace/scratch/b940de9bf689/site/silk-regent-netlify-drop 2/assets/venues/hampton.jpg",
+    "dimensions": [
+      1600,
+      1067
+    ]
+  },
+  "denbies-elegant": {
+    "imageUrl": "https://www.denbies.co.uk/cdn/shop/files/vineyard-experiences-cta.jpg?v=1776762079&width=3200",
+    "source": "https://www.denbies.co.uk/",
+    "path": "/workspace/scratch/b940de9bf689/site/silk-regent-netlify-drop 2/assets/venues/denbies-elegant.jpg",
+    "dimensions": [
+      2213,
+      860
+    ]
+  },
+  "selfridges-full": {
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/9527ebc2-98bd-47e0-92c3-2e297699237c.jpeg",
+    "source": "https://www.townandcountrymag.com/style/fashion-trends/a69001608/best-london-department-stores/",
+    "path": "/workspace/scratch/b940de9bf689/site/silk-regent-netlify-drop 2/assets/venues/selfridges-full.jpg",
+    "dimensions": [
+      2121,
+      1414
+    ]
+  },
+  "english-grill": {
+    "imageUrl": "https://prod-media.redcarnationhotels.com/media/yztjjgw3/english-grill-interior-hc.jpg",
+    "source": "https://rubenshotel.com/dining-and-drinks/the-english-grill",
+    "path": "/workspace/scratch/b940de9bf689/site/silk-regent-netlify-drop 2/assets/venues/english-grill.jpg",
+    "dimensions": [
+      1890,
+      1259
+    ]
+  },
+  "northern-belle-interior": {
+    "source": "https://northernbelle.co.uk/gallery",
+    "imageUrl": "https://northern-belle.s3.eu-west-2.amazonaws.com/578/nb-gallery_0005_6.jpg",
+    "dimensions": [
+      1890,
+      1417
+    ],
+    "description": "Exact reference photograph: Belvoir carriage interior."
+  }
+}

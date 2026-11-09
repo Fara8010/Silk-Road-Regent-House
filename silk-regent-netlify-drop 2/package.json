@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@netlify/functions": "^6.0.2"
+  },
+  "type": "module"
+}
